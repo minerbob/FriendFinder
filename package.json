@@ -1,0 +1,29 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minerbob/FriendFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minerbob/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/minerbob/FriendFinder#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2"
+  },
+  "dependencies": {
+    "chosen-js": "^1.8.7",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "path": "^0.12.7"
+  }
+}
