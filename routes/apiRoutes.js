@@ -47,7 +47,7 @@ module.exports = function (app) {
     res.json(friends);
   });
 
-  // Create New Characters - takes in JSON input
+  // Create New friend - takes in JSON input
   app.post("/api/friends", function (req, res) {
     // req.body hosts is equal to the JSON post sent from the user
     // This works because of our body parsing middleware
@@ -56,4 +56,34 @@ module.exports = function (app) {
     res.json(compare(friends, req.body));
     friends.push(req.body);
   });
+
+
+  // clear the data
+  app.get("/clear", function (req, res) {
+    // req.body hosts is equal to the JSON post sent from the user
+    // This works because of our body parsing middleware
+    friends = [
+      {
+          "name": "Ahmed",
+          "scores": [
+          "5",
+          "1",
+          "4",
+          "4",
+          "5",
+          "1",
+          "2",
+          "5",
+          "4",
+          "1"
+          ]
+          },
+  ];
+    //console.log(compare(friends, req.body));
+    res.json(friends);
+    
+  });
+
+
+
 };
